@@ -1,5 +1,5 @@
 name = "Kiril"
-surname = "Vitruk"
+surname = "Idzykovsky"
 
 full_name = name + ' ' + surname
 

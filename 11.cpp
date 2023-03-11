@@ -17,7 +17,7 @@ int main()
     
     // чи є хоча б 3 нулі
     int zeros = 0;
-    for(int i = 1; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         if(a[i] == 0)
         {

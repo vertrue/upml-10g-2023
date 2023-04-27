@@ -7,10 +7,10 @@ for i in range(n):
     a.append(int(input()))
 
 # чи є хоча б один нуль
-flag = True
-for i in range(1, n):
+flag = False
+for i in range(n):
     if a[i] == 0:
-        flag = False
+        flag = True
 
 # виведення
 if flag:

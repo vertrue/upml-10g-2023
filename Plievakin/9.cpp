@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -6,26 +7,24 @@ int main()
     // розмір масиву
     int n;
     cin >> n;
-
+    
     // створення масиву
     int a[n];
     for(int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-
-    // кількість нулів у масиві
-    int zeros = 0;
+    
+    // сума елементів, менших за 10
+    int summa = 0;
     for(int i = 0; i < n; i++)
     {
-        if(a[i] == 0)
+        if(a[i] <= 10)
         {
-            zeros += 1;
+            summa += a[i];
         }
     }
-
-    // виведення кількості нулів
-    cout << zeros << endl;
-
-    return 0;
+    
+    // виведення
+    cout << summa << endl;
 }

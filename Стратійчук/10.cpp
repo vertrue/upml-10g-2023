@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -14,18 +15,19 @@ int main()
         cin >> a[i];
     }
 
-    // кількість нулів у масиві
-    int zeros = 0;
+    // чи є хоча б один нуль
+    bool flag = false;
     for(int i = 0; i < n; i++)
     {
         if(a[i] == 0)
         {
-            zeros += 1;
+            flag = true;
         }
     }
 
-    // виведення кількості нулів
-    cout << zeros << endl;
-
-    return 0;
+    // виведення
+    if(flag)
+        cout << "є" << endl;
+    else
+        cout << "нема" << endl;
 }

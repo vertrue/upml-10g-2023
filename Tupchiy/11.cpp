@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -14,7 +15,7 @@ int main()
         cin >> a[i];
     }
 
-    // кількість нулів у масиві
+    // чи є хоча б 3 нулі
     int zeros = 0;
     for(int i = 0; i < n; i++)
     {
@@ -24,8 +25,9 @@ int main()
         }
     }
 
-    // виведення кількості нулів
-    cout << zeros << endl;
-
-    return 0;
+    // виведення
+    if(zeros >= 3)
+        cout << "є" << endl;
+    else
+        cout << "нема" << endl;
 }

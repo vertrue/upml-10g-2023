@@ -7,6 +7,6 @@ for i in range(n):
     a.append(int(input()))
 
 if v11(n, a):
- print( "є" )
+    print( "є" )
 else:
- print ("нема")
+    print ("нема")

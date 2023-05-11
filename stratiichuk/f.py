@@ -3,5 +3,6 @@ def v10 (n,a):
     for i in range(n):
         if a[i] == 0:
             flag = True
+            break
 
-        return flag
+    return flag
